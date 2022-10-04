@@ -1,5 +1,6 @@
 package com.example.flixsterpart1
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,10 +11,7 @@ import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 
-val NOW_PLAYING_URL= "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
-
-private const val API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-
+const val NOW_PLAYING_URL= "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
 class MainActivity : AppCompatActivity(){
     private val movies = mutableListOf<CurrentMovie>()
@@ -34,6 +32,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
             Log.e(ContentValues.TAG, "onFailure $statusCode")
         }
 
+        @SuppressLint("NotifyDataSetChanged")
         override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON) {
             Log.i(ContentValues.TAG, "onSuccess: JSON data $json")
                 val movieJsonArray = json.jsonObject.getJSONArray("results")

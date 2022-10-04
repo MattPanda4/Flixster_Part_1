@@ -4,9 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/activity_main2.xml" value="0.2573454913880446" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/activity_person_details_view.xml" value="0.26268115942028986" />
         <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/current_movies_list.xml" value="0.1" />
-        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_current_movies.xml" value="0.67" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/details_view.xml" value="0.26494427558257344" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_current_movies.xml" value="0.22" />
         <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_current_movies_list.xml" value="0.15096251266464034" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_detailed_description.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_person_details.xml" value="0.6268115942028986" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/fragment_popular.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/movie_detail_activity.xml" value="0.1" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/person_details_view.xml" value="0.1" />
+        <entry key="..\:/Users/mattp/AndroidStudioProjects/FlixsterPart1/app/src/main/res/layout/person_view.xml" value="0.21851851851851853" />
       </map>
     </option>
   </component>

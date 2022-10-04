@@ -1,11 +1,10 @@
 package com.example.flixsterpart1
 
+import android.annotation.SuppressLint
 import android.os.Parcelable
-import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 import kotlinx.parcelize.IgnoredOnParcel
 import org.json.JSONArray
-import org.json.JSONObject
 
 @Parcelize
 
@@ -13,7 +12,9 @@ data class CurrentMovie (
     private val posterPath: String,
     val title: String,
     val overview: String,
-) : Parcelable
+    val voteAverage: Double,
+    val language: String
+    ) : Parcelable
 {
     @IgnoredOnParcel val posterImageURL = "https://image.tmdb.org/t/p/w342/$posterPath"
 
@@ -26,8 +27,10 @@ data class CurrentMovie (
                     CurrentMovie(
                         movieJson.getString("poster_path"),
                         movieJson.getString("title"),
-                        movieJson.getString("overview")
-                    )
+                        movieJson.getString("overview"),
+                        movieJson.getDouble("vote_average"),
+                        movieJson.getString("original_language")
+                        )
                 )
             }
             return movies

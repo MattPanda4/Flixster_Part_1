@@ -1,6 +1,7 @@
 package com.example.flixsterpart1
 
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import com.bumptech.glide.Glide
 
 
 private const val TAG = "MovieAdapter"
+const val MOVIE = "MOVIE"
 class CurrentMovieRecyclerViewAdapter(private val context: Context, private val movies: MutableList<CurrentMovie>) :
     RecyclerView.Adapter<CurrentMovieRecyclerViewAdapter.ViewHolder>() {
 
@@ -52,7 +54,9 @@ class CurrentMovieRecyclerViewAdapter(private val context: Context, private val 
             //1. get notified of particular movie which was clicked on
             val movie = movies[adapterPosition]
             Toast.makeText(context, movie.title, Toast.LENGTH_SHORT).show()
-
+            val intent = Intent(context, MovieDetailActivity::class.java)
+            intent.putExtra(MOVIE,movie)
+            context.startActivity(intent)
         }
     }
 }
